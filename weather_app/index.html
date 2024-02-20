@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            
+             <div class="heading">
+                <h1>WEATHER APP</h1>
+            </div>
+            <!-- button tab -->
+            <div class="switchbutton">
+                <p class="tab" data-userweather>Your weather</p>
+                <p class="tab" data-placeweather>Search weather</p>
+            </div>
+            <!-- grant location acess -->
+
+            <div class=" sub-container grant_location_acess" data-grant_location_acess>
+
+                <img src="location.png" height="80px" width="80px" loading="lazy">
+                <p class="heading1">Grant Location Acess</p>
+                <p class="heading2">Allow Acess To Get Weather</p>
+                <button class="grant_acess" data-grant_acess_btn>Grant Acess</button>
+
+            </div>
+
+            <!-- search bar -->
+            <form action="" class="searchform" data-searchform>
+
+                <input type="text" placeholder="Search for city" data-search_for_city class="inputsearch" >
+                <button class="btn" >
+                    <img src="search.png" height="20px" width="20px" loading="lazy" class="searchimg">
+                </button>
+
+            </form>
+           
+            <!-- Loading Pages -->
+            <div class=" sub-container loading_container" data-loader_section>
+                <img src="loading.gif" width="150" height="150" alt="">
+                <p>Loading</p>
+            </div>
+            <div class="sub-container details " data-details>
+                <div class="name">
+                    <p class=country_name data-city_name>
+                        
+                    </p>
+                    <img  data-country_flag>
+                </div>
+                <div class="weather_desc" >
+                    <p data-discription></p>
+                </div>
+                <div class="img_photo">
+                        <img data-weatherimg >
+                </div>
+                <div class="temperature">
+                    <p data-temp></p>
+                </div>
+            
+            <div class=" weather_details">
+
+                <div class="wind_speed">
+                    <img src="wind.png" width="40px" alt="">
+                    <p>wind speed</p>
+                    <p data-wind_speed></p>
+                </div>
+
+                <div class="humidity">
+                    <img src="humidity.png" width="40px" alt="">
+                    <p>humidity</p>
+                    <p data-humidity></p>
+                </div>
+
+                <div class="cloud">
+                    <img src="cloud.png" width="40px"  alt="">
+                    <p>colud</p>
+                    <p data-cloud></p>
+                </div> 
+            </div>
+                
+            </div>
+        </div> 
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
